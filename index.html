@@ -1,14 +1,356 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Danilo Lazić</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Test page 123</h1>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Danilo Lazić</h1>
+            <h2>Software Developer</h2>
+            <a href="Rezume-5.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am a Computer Science student, with <b>9 years of programming experience </b>in various languages such as <b>C++, C#, HTML, CSS</b>. 
+                        I am looking for opportunities to gain experience in becoming a full stack developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>Bash</li>
+            <li>MySQL</li>
+            <li>MariaDB</li>
+            <li>PostegreSQL</li>
+            <li>VS Code</li>
+            <li>Git</li>
+            <li>Unity</li>
+            <li>Unreal Engine</li>
+            <li>Android Studio</li>
+            <li>WordPress</li>
+            <li>Windows</li>
+            <li>Ubuntu</li>
+            <li>CentOS</li>
+            <li>Debian</li>
+            <li>Kali Linux</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="July 2021 – September 2021 <br>Kruševac, Serbia">
+                <h3>Bartender and waiter</h3>
+                <h4>MCaffe 037</h4>
+                <p>
+                    Preparing drinks, serving customers<br>
+                    I learned how to work in a group of people as a team
+                </p>
+            </div>
+
+            <div data-date="March 2021 – September 2021 <br>Remote – Belgrade, Serbia">
+                <h3>System Administrator</h3>
+                <h4>Freelance</h4>
+                <p>
+                    I was hired by a private company to do server management<br>
+                    I worked as White Hat and Red Hat team for them<br>
+                    I succesfully developed a Bash script for Anti-DDoS which was proven effective when tested with around 30Gbit/s attacks
+                </p>
+            </div>
+
+            <div data-date="September 2020 – Present <br>Kruševac, Serbia">
+                <h3>Assistant manager on projects</h3>
+                <h4>Udruženje građana "Prava Žena"</h4>
+                <p>
+                    Organizing humanitarian programs for raising money for medical treatments for children from Kruševac and surrounding areas
+                </p>
+            </div>
+
+            <div data-date="September 2020 – January 2021 <br>Kruševac, Serbia">
+                <h3>Bartender and waiter</h3>
+                <h4>Y Club</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Primorska</h3>
+            <span class="education-date">Oct 2022 - Present</span>
+            <h4>Bachelor of Science in Computer Science</h4>
+            <!-- <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+            </p> -->
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>High Music School "Stevan Hristić"</h3>
+            <span class="education-date">Sept 2018 - Jun 2022</span>
+            <h4>Sound Design - Music Production</h4>
+            <!-- <ul>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+            </ul> -->
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/antiddos.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Anti-DDoS Script</h3>
+                        <p>
+                            <ul>
+                                <li>Developed using Bash and iptables</li>
+                                <li>I developed it while working for the private company</li>
+                                <li>This script helped when their servers were under frequent DDoS attacks</li>
+                            </ul>
+                        </p>
+                        <a href="https://github.com/dnllzc/MultiScriptByDaLaZ/blob/master/MultiScriptByDaLaZ">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/dos2.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>DoS Detection</h3>
+                        <p>
+                            <ul>
+                                <li>Developed using Java and Shell</li>
+                                <li>Filtering packets with tcpdump and analyzing them for malicious intent</li>
+                                <li>This is a class project that is still being developed</li>
+                            </ul>
+                        </p>
+                        <a href="https://github.com/dnllzc/dos-protection/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pravazena.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Udruženje građana "Prava Žena"</h3>
+                        <p>
+                            <ul>
+                                <li>Developed using WordPress</li>
+                                <li>This website was developed for the humanitarian association</li>
+                                <li>Optimized it with WPCache, improved security with WPSecurity</li>
+                            </ul>
+                        </p>
+                        <a href="https://prava-zena.com/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/elhm(1).png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Elevator and Hangman simulators</h3>
+                        <p>
+                            <ul>
+                                <li>Developed using C</li>
+                                <li>Program that simulates elevator and the Hangman game</li>
+                                <li>These programs were developed for a class project</li>
+                            </ul>
+                        </p>
+                        <a href="https://github.com/dnllzc/C">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/moreless.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>More or less, less is more</h3>
+                        <p>
+                            <ul>
+                                <li>Developed using Java</li>
+                                <li>This program was developed for a class project</li>
+                            </ul>
+                        </p>
+                        <a href="https://github.com/dnllzc/Java">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form
+                action="https://formspree.io/f/xknabjzy"
+                method="POST"
+            >
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2024</span> Danilo Lazić
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/dnllzc" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/danilo-lazi%C4%87-337051267/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/dalazzz" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/dnllzc" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
